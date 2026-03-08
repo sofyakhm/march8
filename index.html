@@ -142,12 +142,11 @@
     .ticketContent{position:relative; z-index:2; display:grid; grid-template-columns:1fr 1fr; height:100%}
     .left, .right{padding:18px}
     .right{border-left:2px dashed rgba(107,53,81,.18)}
-    .brand{font-size:26px; font-weight:1000; margin:0 0 30px}
-    .mini{font-size:12px; color:#9b6a86; text-transform:uppercase; letter-spacing:.08em; margin-bottom:5px}
-    .event{font-size:21px; font-weight:1000; line-height:1.08; margin:0 0 10px; max-width:320px}
-    .dt{font-size:14px; margin:0 0 28px}
-    .venue{font-size:18px; font-weight:900; margin:0 0 4px}
-    .addr{font-size:12px; color:#9b6a86; margin:0 0 24px}
+    .brand{font-size:20px; font-weight:900; margin:0 0 20px}
+.event{font-size:15px; font-weight:900; line-height:1.1; margin:0 0 8px; max-width:280px}
+.dt{font-size:12px; margin:0 0 18px}
+.venue{font-size:14px; font-weight:800; margin:0 0 2px}
+.addr{font-size:11px; color:#9b6a86; margin:0 0 18px}
     .bottomGrid{position:absolute; left:18px; right:18px; bottom:16px; display:grid; grid-template-columns:repeat(5,1fr); gap:10px}
     .bottomCell .mini{font-size:10px}
     .bottomCell p:last-child{margin:0; font-size:12px; font-weight:900}
@@ -242,16 +241,12 @@
                       <div class="barcode"></div>
                     </section>
 
-                    <section class="right">
-                      <div class="qr" aria-hidden="true"></div>
-                      <div class="helpBlock">
-                        <h4>Как работает билет</h4>
-            
-                  
-                        <p>Можно просто поцеловать дарителя сто раз</p>
-                      
-                      </div>
-                    </section>
+                  <section class="right">
+  <div class="helpBlock">
+    <h4>Как работает билет</h4>
+    <p>Можно просто поцеловать дарителя сто раз</p>
+  </div>
+</section>
                   </div>
                 </div>
               </div>
@@ -260,9 +255,6 @@
             <div class="actions">
               <button class="ghostBtn" id="replayBtn">🔁 Показать ещё раз</button>
             </div>
-              <audio id="audio" controls preload="none">
-                <source src="music.mp3" type="audio/mpeg">
-              </audio>
             </div>
           </div>
           <div id="placeholder" class="tiny" style="display:none"></div>
